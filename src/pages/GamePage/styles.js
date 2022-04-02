@@ -3,8 +3,20 @@ import { StyleSheet } from 'react-native'
 const styles = StyleSheet.create({
     containMain: {
         flex: 1,
-        backgroundColor: '#ddd',
+        backgroundColor: '#fff',
         width: '100%',
+    },
+
+    containPage:{
+        flex: 1,
+        justifyContent: 'space-between',
+        alignItems: 'center'
+    },
+
+    containImgCannon: {
+        width: 100,
+        height: 80,
+        rotation: 60
     },
 })
 
