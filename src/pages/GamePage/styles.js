@@ -6,8 +6,6 @@ const styles = StyleSheet.create({
         backgroundColor: '#ddd',
         width: '100%',
     },
-
-    
 })
 
 export default styles
