@@ -13,7 +13,7 @@ const Game = () => {
       <View style={[styles.containPage]}>
         <Ball /> 
 
-        <View style={{backgroundColor: '#ddd'}}>
+        <View style={{backgroundColor: '#ddd', rotation: 2}}>
           <Image 
             source={imgCannon}
             style={[styles.containImgCannon]}

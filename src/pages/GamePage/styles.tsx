@@ -10,13 +10,12 @@ const styles = StyleSheet.create({
     containPage:{
         flex: 1,
         justifyContent: 'space-between',
-        alignItems: 'center'
+        alignItems: 'center',
     },
 
     containImgCannon: {
         width: 100,
-        height: 80,
-        rotation: 60
+        height: 80
     },
 })
 
