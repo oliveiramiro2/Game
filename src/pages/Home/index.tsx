@@ -1,6 +1,7 @@
 import { View, Text } from 'react-native'
 import React from 'react'
-import { MotiImage, MotiText } from 'moti'
+import { MotiImage, MotiText, MotiView } from 'moti'
+import Icon from 'react-native-vector-icons/MaterialIcons'
 
 import styles from './styles'
 
@@ -26,6 +27,20 @@ const index: React.FC = () => {
             Bem vindo de volta aos games
         </MotiText>
 
+        <View style={{flex: 1, width: '94%'}}>
+            <MotiView
+                style={{alignItems: 'flex-end'}}
+                from={{right: 10}}
+                animate={{right: 0}}
+                transition={{type: 'timing', duration: 150, loop: true}}
+            >
+                <Icon 
+                    name="notifications-active"
+                    size={45}
+                    color="#ff0000"
+                />
+            </MotiView>
+        </View>
 
     </View>
   )
