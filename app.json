@@ -8,11 +8,7 @@
     "splash": {
       "image": "./assets/splash.jpg",
       "resizeMode": "contain",
-<<<<<<< HEAD
-      "backgroundColor": "#3366ff"
-=======
-      "backgroundColor": "#e2e2e2"
->>>>>>> 1bc2d6a4308fab3cd3c6c07a12423bd247c181ab
+      "backgroundColor": "#ccebff"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -26,11 +22,7 @@
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-<<<<<<< HEAD
-        "backgroundColor": "#3366ff"
-=======
-        "backgroundColor": "#e3e3e3"
->>>>>>> 1bc2d6a4308fab3cd3c6c07a12423bd247c181ab
+        "backgroundColor": "#ccebff"
       }
     },
     "web": {
