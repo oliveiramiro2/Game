@@ -1,6 +1,6 @@
 import { View, Text } from 'react-native'
 import React from 'react'
-import { MotiImage } from 'moti'
+import { MotiImage, MotiText } from 'moti'
 
 import styles from './styles'
 
@@ -17,7 +17,14 @@ const index: React.FC = () => {
             transition={{type: 'spring'}}
         />
 
-        <Text style={[styles.textWelcome, styles.updock]}>Bem vindo de volta aos games</Text>
+        <MotiText 
+            style={[styles.textWelcome, styles.updock]}
+            from={{scale: 0.1, right: 350, borderBottomWidth: 20}}
+            animate={{scale: 1, right: 0, borderBottomWidth: 1 }}
+            transition={{type: 'timing', duration: 1000}}
+        >
+            Bem vindo de volta aos games
+        </MotiText>
 
 
     </View>
