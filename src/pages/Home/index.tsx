@@ -12,7 +12,10 @@ const index: React.FC = () => {
     <View style={[styles.contain]}>
         <MotiImage 
             source={imgHome}
-            style={{width: '100%', height: 100}}
+            style={{width: '100%', height: "30%"}}
+            from={{opacity: 0, bottom: 200}}
+            animate={{opacity: 1, bottom: 0}}
+            transition={{type: 'spring'}}
         />
 
         <Text>Jogo</Text>
