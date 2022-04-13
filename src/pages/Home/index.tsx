@@ -20,24 +20,36 @@ const index: React.FC = () => {
 
         <MotiText 
             style={[styles.textWelcome, styles.updock]}
-            from={{scale: 0.1, right: 350, borderBottomWidth: 20}}
-            animate={{scale: 1, right: 0, borderBottomWidth: 1 }}
-            transition={{type: 'timing', duration: 1000}}
+            from={{right: 350, borderBottomWidth: 20}}
+            animate={{right: 0, borderBottomWidth: 1 }}
+            transition={{type: 'timing', duration: 900}}
         >
             Bem vindo de volta aos games
         </MotiText>
 
-        <View style={{flex: 1, width: '94%'}}>
+        <View style={{flex: 1, width: '94%', flexDirection: 'row'}}>
             <MotiView
                 style={{alignItems: 'flex-end'}}
-                from={{right: 10}}
-                animate={{right: 0}}
-                transition={{type: 'timing', duration: 150, loop: true}}
+                from={{opacity: 0.1}}
+                animate={{opacity: 1}}
+                transition={{type: 'timing', duration: 800, loop: true}}
             >
                 <Icon 
                     name="notifications-active"
-                    size={45}
+                    size={25}
                     color="#ff0000"
+                />
+            </MotiView>
+            <MotiView
+                style={{alignItems: 'flex-end'}}
+                from={{marginBottom: 5}}
+                animate={{marginBottom: 0}}
+                transition={{type: 'timing', duration: 1000, loop: true}}
+            >
+                <Icon 
+                    name="email"
+                    size={25}
+                    color="#ffffff"
                 />
             </MotiView>
         </View>
