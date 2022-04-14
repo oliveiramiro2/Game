@@ -2,6 +2,7 @@ import { View, Text } from 'react-native'
 import React from 'react'
 import { MotiImage, MotiText, MotiView } from 'moti'
 import Icon from 'react-native-vector-icons/MaterialIcons'
+import IconFA from 'react-native-vector-icons/FontAwesome5'
 
 import styles from './styles'
 
@@ -27,9 +28,9 @@ const index: React.FC = () => {
             Bem vindo de volta aos games
         </MotiText>
 
-        <View style={{flex: 1, width: '94%', flexDirection: 'row'}}>
+        <View style={{flex: 1, width: '100%', flexDirection: 'row', justifyContent: "space-between", marginTop: 6}}>
             <MotiView
-                style={{alignItems: 'flex-end'}}
+                style={{marginLeft: 5}}
                 from={{opacity: 0.1}}
                 animate={{opacity: 1}}
                 transition={{type: 'timing', duration: 800, loop: true}}
@@ -41,15 +42,27 @@ const index: React.FC = () => {
                 />
             </MotiView>
             <MotiView
-                style={{alignItems: 'flex-end'}}
-                from={{marginBottom: 5}}
-                animate={{marginBottom: 0}}
-                transition={{type: 'timing', duration: 1000, loop: true}}
+                style={{alignItems: 'center', position: "relative"}}
+                from={{bottom: 5}}
+                animate={{bottom: 0}}
+                transition={{loop: true}}
             >
                 <Icon 
                     name="email"
                     size={25}
                     color="#ffffff"
+                />
+            </MotiView>
+            <MotiView
+                style={{alignItems: 'flex-end', marginRight: 5}}
+                from={{height: 25}}
+                animate={{height: 0}}
+                transition={{loop: true, type: 'timing', duration: 1200}}
+            >
+                <IconFA 
+                    name="user-circle"
+                    size={25}
+                    color="#eee"
                 />
             </MotiView>
         </View>
