@@ -7,7 +7,8 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "eject": "expo eject"
+    "eject": "expo eject",
+    "test": "jest"
   },
   "dependencies": {
     "@expo-google-fonts/inter": "^0.2.2",
@@ -15,21 +16,47 @@
     "expo": "~44.0.0",
     "expo-font": "~10.0.4",
     "expo-status-bar": "~1.2.0",
+    "google-translate-api": "^2.3.0",
+    "matter-js": "^0.18.0",
     "moti": "^0.17.1",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-native": "0.64.3",
+    "react-native-game-engine": "^1.2.0",
+    "react-native-gesture-handler": "~2.1.0",
+    "react-native-mask-input": "^1.2.0",
+    "react-native-masked-text": "^1.13.0",
     "react-native-reanimated": "~2.3.1",
     "react-native-safe-area-context": "3.3.2",
     "react-native-screens": "~3.10.1",
+    "react-native-text-input-mask": "^3.1.4",
     "react-native-vector-icons": "^9.1.0",
-    "react-native-web": "0.17.1"
+    "react-native-web": "0.17.1",
+    "translate": "^1.4.1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
+    "@babel/preset-typescript": "^7.17.12",
+    "@testing-library/jest-native": "^4.0.5",
+    "@testing-library/react-native": "^9.1.0",
+    "@types/jest": "^28.1.0",
+    "@types/mocha": "^9.1.1",
     "@types/react": "~17.0.21",
     "@types/react-native": "~0.64.12",
+    "jest": "^28.1.0",
     "typescript": "~4.3.5"
   },
-  "private": true
+  "private": true,
+  "jest": {
+    "preset": "react-native",
+    "setupFilesAfterEnv": [
+      "@testing-library/jest-native/extend-expect"
+    ],
+    "transformIgnorePatterns": [
+      "node_modules/(?!(jest-)?react-native|@?react-navigation)"
+    ],
+    "setupFiles": [
+      "./node_modules/react-native-gesture-handler/jestSetup.js"
+    ]
+  }
 }

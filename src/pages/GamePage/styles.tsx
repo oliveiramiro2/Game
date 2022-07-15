@@ -7,6 +7,11 @@ const styles = StyleSheet.create({
         width: '100%',
     },
 
+    gameEngine: {
+        flex: 1,
+        borderWidth: 2
+    },
+
     containPage:{
         flex: 1,
         justifyContent: 'space-between',
